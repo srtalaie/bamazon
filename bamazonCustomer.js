@@ -12,9 +12,9 @@ const connection = mysql.createConnection({
 });
 
 function start(){
+    console.log('Welcome Customer!')
     console.log('Please choose an item you would like to purchase:')
     displayItems();
-
     inquirer.prompt([
         {
             name: 'itemId',
@@ -76,7 +76,16 @@ function fulfillOrder(id, amount){
             start();
         } else {
             console.log('Congrats! Your order of has gone through.');
-            start();
+            showCost(id, amount);
         }
+    })
+}
+
+function showCost(id, amount){
+    let query = `SELECT price FROM products WHERE item_id = ${id}`;
+    connection.query(query, function(err, res){
+        if (err) throw err;
+        console.log(`Total: $${res[0].price * amount}`);
+        start();
     })
 }
