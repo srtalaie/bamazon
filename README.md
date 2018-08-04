@@ -11,7 +11,7 @@ You can run a number of commands using either $node bamazonCustomer.js or $node 
 **Customer is shown the entire catalog of products and is prompted to choose the product by ID and the Amount of the product they want:**
 ![](https://github.com/srtalaie/bamazon/blob/master/screenshots/order.PNG)
 
-**Then their total for the order is displayed.
+**Then their total for the order is displayed.**
 
 **If an order is not capable of going through (If there are not enough items in stock) then the user will be notified and asked to choose another order. And the order will not go through:**
 ![](https://github.com/srtalaie/bamazon/blob/master/screenshots/failedOrder.PNG)
