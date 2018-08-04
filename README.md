@@ -6,3 +6,4 @@ You can run a number of commands using either $node bamazonCustomer.js or $node 
 ##Customer Commands
 
 *Intial Page Customer Sees:
+![homepage screen grab](screenshots/customerHomePage.png)
